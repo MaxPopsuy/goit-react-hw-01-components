@@ -8,12 +8,10 @@ function getRandom(min, max) {
     colorArr.length = 0;
   }
   colorArr.push(result);
-  console.log(colorArr);
   return result;
 }
 
 const Statistics = props => {
-  console.log(props.stats.map(elem => {console.log(elem.label);}));
   return (
     <section className={styles.statistics}>
         {props.title && (
