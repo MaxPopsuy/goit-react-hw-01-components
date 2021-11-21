@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import styles from "./statistics.module.css";
 
 const colorArr = [];
@@ -35,3 +35,8 @@ const Statistics = props => {
 };
 
 export default Statistics;
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.array.isRequired,
+};

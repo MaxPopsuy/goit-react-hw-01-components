@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import styles from "./profile.module.css";
 
 const Profile = props => {
@@ -35,3 +35,11 @@ const Profile = props => {
 };
 
 export default Profile;
+
+Profile.propTypes = {
+  name: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.object.isRequired,
+  tag: PropTypes.string,
+  location: PropTypes.string
+};
